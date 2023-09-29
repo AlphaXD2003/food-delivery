@@ -1,0 +1,274 @@
+/* CSS Reset  */
+*{
+    margin: 0;padding: 0;
+}
+
+/* Navbar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.9;
+    height: 90px;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+/* Navbar : logo . */
+#my_logo{
+    margin: 14px 34px;
+}
+#my_logo img{
+    height: 55px;
+    margin: 0px 2px;
+}
+
+/* Navbar : navigation.  */
+#navigation ul{
+    display: flex;
+}
+
+#navigation ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navigation ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 2px 20px;
+    color: white;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navigation ul li a:hover{
+  color: black;
+  background-color: #fff;
+}
+
+/* Home  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 300px;
+    justify-content: center;
+    align-items: center;
+    height: 333px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+#home::before{
+    content: "";
+    background: url(../img/background/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 505px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;  
+    top: 0;
+    left: 0;
+}
+
+
+#home p{
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+
+
+/* Services.  */
+#services_container{
+    margin: 34px; 
+}
+#services_container h1{
+    margin: 34px; 
+    color: black;
+    margin-top: 78px;
+}
+
+#services{
+    display: flex;
+    margin: 34px;
+
+}
+#services .box img{
+ display: block;
+ margin: auto;
+ height: 160px;
+ margin-bottom: 6px;
+}
+
+
+
+#services_container .box{
+    border: 2px solid brown;
+    margin: 0px 15px;
+    border-radius: 23px;
+    padding: 5px 20px;
+    background-color: #f2f2f2;
+}
+/* Client Area. */
+
+#client_area{
+    position: relative;
+    height: 330px;
+}
+#client_area::before{
+    content: "";
+    width: 100%;
+    height: 330px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background: url('../img/background/bg.jpg');    
+    opacity: 0.3;
+}
+#client_area h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+.client_item{
+    display: flex;
+    justify-content: center;
+    padding: 10px 34px;
+}
+
+.client{
+    /* border: 2px solid red; */
+    height: 130px;
+    display: block;
+    margin: 30px 34px;
+
+}
+
+
+
+/* Contact Section.  */
+#contact{
+    position: relative;
+    height: 590px;
+}
+#contact::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/contact/contact.jpg') no-repeat center center/cover;
+}
+
+#contact h1{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#contact_box{
+    padding-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_box input,#contact_box textarea{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+
+}
+
+#contact_box form{
+    width: 40%;
+
+}
+
+#contact_box label{
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    
+}
+
+
+
+#contact_box input[type=submit]{
+    width: 150px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+#contact_box input[type=submit]:hover{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+/* Footer  */
+footer{
+    background-color: black;
+    color: wheat;
+    /* height: 30px; */
+    padding: 9px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Utilities. */
+
+.h-primary{
+    padding: 12px;
+    color: white;
+    font-size: 3.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.h-secondary{
+    padding: 12px;
+    color: black;
+    font-size: 2.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn{
+    padding: 6px 24px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
